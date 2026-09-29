@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <title> Snow 的个人网站 2026
+    </title>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Webestica.com">
+    <meta name="description" content="Ziwei Xue 的个人学术主页：生物信息学、多组学分析、学术论文与研究经历。">
+
+    <link rel="alternate" hreflang="en" href="index.html">
+    <link rel="alternate" hreflang="zh-CN" href="index_zh.html">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/logo2.png">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/tiny-slider/tiny-slider.css">
+
+    <!-- Theme CSS -->
+    <link id="style-switch" rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<style>
+    #wrapper {
+        position: relative
+    }
+    
+    #wrapper video {
+        position: relative;
+        z-index: 100;
+    }
+    
+    #wrapper p {
+        position: absolute;
+        display: block;
+        z-index: 150;
+        left: 10px;
+        top: 10px;
+        color: white;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 12pt;
+        margin-left: 10pt;
+    }
+    
+    video {
+        max-height: 80vh;
+    }
+    
+    body {
+        font-family: "Nunito Sans", "PingFang SC", "Microsoft YaHei", sans-serif;
+        font-size: 12pt;
+    }
+    
+    .institution-logo {
+        height: 22px;
+        width: auto;
+        max-width: none;
+        margin-left: 5px;
+        vertical-align: middle;
+    }
+    
+    .section-heading {
+        color: black;
+    }
+    
+    .nav-link {
+        cursor: pointer;
+    }
+    
+    .dropdown-toggle {
+        cursor: pointer;
+    }
+    
+    li {
+        margin-bottom: 10pt;
+    }
+</style>
+
+<body>
+
+    <!--  Header START -->
+    <header class="navbar-light navbar-sticky header-static">
+        <!-- Logo Nav START -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <!-- Logo START -->
+                <img src="./assets/images/arctic-fox.gif" alt="Ziwei Xue" class="img-fluid item-gallery profile_image" style="zoom:10%" />
+                <a class="navbar-brand" href="index_zh.html">
+					Snow 的个人网站 2026
+				</a>
+                <!-- Logo END -->
+                <a class="btn btn-sm btn-outline-primary ms-2 language-switch" href="index.html" lang="en" hreflang="en" aria-label="Switch to English">English</a>
+
+                <!-- Responsive navbar toggler -->
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="展开或收起导航">
+					<span class="text-body h6 d-none d-sm-inline-block">菜单</span>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+                <!-- Main navbar START -->
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+
+                    <ul class="navbar-nav navbar-nav-scroll ms-auto">
+
+                        <!-- Nav item 1 Demos -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" id="homeMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">首页</a>
+                            <ul class="dropdown-menu" aria-labelledby="homeMenu">
+
+                                <li class="dropdown-submenu dropend">
+                                    <a class="dropdown-item dropdown-toggle">笔记与思考</a>
+                                    <ul class="dropdown-menu dropdown-menu-start" data-bs-popper="none">
+                                        <li> <a class="dropdown-item" href="./notes/geoformat.html" target="_blank">GeoJSON 与 GeoParquet</a>
+                                        </li>
+                                        <li> <a class="dropdown-item" href="./notes/linkedlist.html" target="_blank">C 语言链表</a>
+                                        </li>
+                                        <li> <a class="dropdown-item" href="./notes/EM.html" target="_blank">EM 算法笔记</a>
+                                        </li>
+                                        <li> <a class="dropdown-item" href="./notes/d3bioinfo.html" target="_blank">D3.js 在生物信息学中的应用</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu dropend">
+                                    <a class="dropdown-item dropdown-toggle">生物信息学工具</a>
+                                    <ul class="dropdown-menu dropdown-menu-start" data-bs-popper="none">
+                                        <li> <a class="dropdown-item" href="https://github.com/WanluLiuLab/scAtlasVAE">
+												scAtlasVAE <svg version="1.1" id="Layer_1"
+													xmlns="http://www.w3.org/2000/svg"
+													xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+													viewBox="0 0 407.3 328.5"
+													style="enable-background:new 0 0 407.3 328.5; height: 12pt; "
+													xml:space="preserve">
+													<path d="M246.7,312.8c0-1.8,0-6,0.1-11.6c0.1-11.4,0.1-28.8,0.1-43.7c0-15.6-5.2-25.5-11.3-30.7c37-4.1,76-9.2,76-73.1
+										   c0-18.2-6.5-27.3-17.1-39c1.7-4.3,7.4-22-1.7-45c-13.9-4.3-45.7,17.9-45.7,17.9c-13.2-3.7-27.5-5.6-41.6-5.6s-28.4,1.9-41.6,5.6
+										   c0,0-31.8-22.2-45.7-17.9c-9.1,22.9-3.5,40.6-1.7,45c-10.6,11.7-15.6,20.8-15.6,39c0,63.6,37.3,69,74.3,73.1
+										   c-4.8,4.3-9.1,11.7-10.6,22.3c-9.5,4.3-33.8,11.7-48.3-13.9c-9.1-15.8-25.5-17.1-25.5-17.1c-16.2-0.2-1.1,10.2-1.1,10.2
+										   c10.8,5,18.4,24.2,18.4,24.2c9.7,29.7,56.1,19.7,56.1,19.7c0,9,0.1,21.7,0.1,30.6c0,4.8,0.1,8.6,0.1,10c0,4.3-3,9.5-11.5,8
+										   c-66-22.1-112.2-84.9-112.2-158.3C40.7,70.7,110.9,1,202.7,1s166.2,69.7,166.2,161.5c0.1,73.4-44.7,136.3-110.7,158.3
+										   C249.8,322.3,246.7,317.1,246.7,312.8z" />
+												</svg>
+
+											</a></li>
+                                        <li> <a class="dropdown-item" href="https://github.com/WanluLiuLab/TCR-DeepInsight"> TCR-DeepInsight
+												<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+													xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+													viewBox="0 0 407.3 328.5"
+													style="enable-background:new 0 0 407.3 328.5; height: 12pt; "
+													xml:space="preserve">
+													<path d="M246.7,312.8c0-1.8,0-6,0.1-11.6c0.1-11.4,0.1-28.8,0.1-43.7c0-15.6-5.2-25.5-11.3-30.7c37-4.1,76-9.2,76-73.1
+										   c0-18.2-6.5-27.3-17.1-39c1.7-4.3,7.4-22-1.7-45c-13.9-4.3-45.7,17.9-45.7,17.9c-13.2-3.7-27.5-5.6-41.6-5.6s-28.4,1.9-41.6,5.6
+										   c0,0-31.8-22.2-45.7-17.9c-9.1,22.9-3.5,40.6-1.7,45c-10.6,11.7-15.6,20.8-15.6,39c0,63.6,37.3,69,74.3,73.1
+										   c-4.8,4.3-9.1,11.7-10.6,22.3c-9.5,4.3-33.8,11.7-48.3-13.9c-9.1-15.8-25.5-17.1-25.5-17.1c-16.2-0.2-1.1,10.2-1.1,10.2
+										   c10.8,5,18.4,24.2,18.4,24.2c9.7,29.7,56.1,19.7,56.1,19.7c0,9,0.1,21.7,0.1,30.6c0,4.8,0.1,8.6,0.1,10c0,4.3-3,9.5-11.5,8
+										   c-66-22.1-112.2-84.9-112.2-158.3C40.7,70.7,110.9,1,202.7,1s166.2,69.7,166.2,161.5c0.1,73.4-44.7,136.3-110.7,158.3
+										   C249.8,322.3,246.7,317.1,246.7,312.8z" />
+												</svg></a></li>
+                                        <li> <a class="dropdown-item" href="https://github.com/Beiusxzw/chunked-anndata"> AnnData 随机访问 <svg version="1.1" id="Layer_1"
+													xmlns="http://www.w3.org/2000/svg"
+													xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+													viewBox="0 0 407.3 328.5"
+													style="enable-background:new 0 0 407.3 328.5; height: 12pt; "
+													xml:space="preserve">
+													<path d="M246.7,312.8c0-1.8,0-6,0.1-11.6c0.1-11.4,0.1-28.8,0.1-43.7c0-15.6-5.2-25.5-11.3-30.7c37-4.1,76-9.2,76-73.1
+										   c0-18.2-6.5-27.3-17.1-39c1.7-4.3,7.4-22-1.7-45c-13.9-4.3-45.7,17.9-45.7,17.9c-13.2-3.7-27.5-5.6-41.6-5.6s-28.4,1.9-41.6,5.6
+										   c0,0-31.8-22.2-45.7-17.9c-9.1,22.9-3.5,40.6-1.7,45c-10.6,11.7-15.6,20.8-15.6,39c0,63.6,37.3,69,74.3,73.1
+										   c-4.8,4.3-9.1,11.7-10.6,22.3c-9.5,4.3-33.8,11.7-48.3-13.9c-9.1-15.8-25.5-17.1-25.5-17.1c-16.2-0.2-1.1,10.2-1.1,10.2
+										   c10.8,5,18.4,24.2,18.4,24.2c9.7,29.7,56.1,19.7,56.1,19.7c0,9,0.1,21.7,0.1,30.6c0,4.8,0.1,8.6,0.1,10c0,4.3-3,9.5-11.5,8
+										   c-66-22.1-112.2-84.9-112.2-158.3C40.7,70.7,110.9,1,202.7,1s166.2,69.7,166.2,161.5c0.1,73.4-44.7,136.3-110.7,158.3
+										   C249.8,322.3,246.7,317.1,246.7,312.8z" />
+												</svg> </a></li>
+                                        <li> <a class="dropdown-item" href="https://github.com/Beiusxzw/STDI"> STDI <svg
+													version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+													xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+													viewBox="0 0 407.3 328.5"
+													style="enable-background:new 0 0 407.3 328.5; height: 12pt; "
+													xml:space="preserve">
+													<path d="M246.7,312.8c0-1.8,0-6,0.1-11.6c0.1-11.4,0.1-28.8,0.1-43.7c0-15.6-5.2-25.5-11.3-30.7c37-4.1,76-9.2,76-73.1
+										   c0-18.2-6.5-27.3-17.1-39c1.7-4.3,7.4-22-1.7-45c-13.9-4.3-45.7,17.9-45.7,17.9c-13.2-3.7-27.5-5.6-41.6-5.6s-28.4,1.9-41.6,5.6
+										   c0,0-31.8-22.2-45.7-17.9c-9.1,22.9-3.5,40.6-1.7,45c-10.6,11.7-15.6,20.8-15.6,39c0,63.6,37.3,69,74.3,73.1
+										   c-4.8,4.3-9.1,11.7-10.6,22.3c-9.5,4.3-33.8,11.7-48.3-13.9c-9.1-15.8-25.5-17.1-25.5-17.1c-16.2-0.2-1.1,10.2-1.1,10.2
+										   c10.8,5,18.4,24.2,18.4,24.2c9.7,29.7,56.1,19.7,56.1,19.7c0,9,0.1,21.7,0.1,30.6c0,4.8,0.1,8.6,0.1,10c0,4.3-3,9.5-11.5,8
+										   c-66-22.1-112.2-84.9-112.2-158.3C40.7,70.7,110.9,1,202.7,1s166.2,69.7,166.2,161.5c0.1,73.4-44.7,136.3-110.7,158.3
+										   C249.8,322.3,246.7,317.1,246.7,312.8z" />
+												</svg> </a></li>
+                                        <li> <a class="dropdown-item" href="https://huardb.net/v2/"> huARdb-v2 </a></li>
+                                        <li> <a class="dropdown-item" href="https://https://www.msdb.org.cn/"> MSdb </a>
+                                        </li>
+                                        <li> <a class="dropdown-item" href="https://www.crisprte.cn/">CRISPR-TE </a>
+                                        </li>
+                                        <li> <a class="dropdown-item" href="https://github.com/Beiusxzw/motifSearch">MotifSearch <svg
+													version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+													xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+													viewBox="0 0 407.3 328.5"
+													style="enable-background:new 0 0 407.3 328.5; height: 12pt; "
+													xml:space="preserve">
+													<path d="M246.7,312.8c0-1.8,0-6,0.1-11.6c0.1-11.4,0.1-28.8,0.1-43.7c0-15.6-5.2-25.5-11.3-30.7c37-4.1,76-9.2,76-73.1
+										   c0-18.2-6.5-27.3-17.1-39c1.7-4.3,7.4-22-1.7-45c-13.9-4.3-45.7,17.9-45.7,17.9c-13.2-3.7-27.5-5.6-41.6-5.6s-28.4,1.9-41.6,5.6
+										   c0,0-31.8-22.2-45.7-17.9c-9.1,22.9-3.5,40.6-1.7,45c-10.6,11.7-15.6,20.8-15.6,39c0,63.6,37.3,69,74.3,73.1
+										   c-4.8,4.3-9.1,11.7-10.6,22.3c-9.5,4.3-33.8,11.7-48.3-13.9c-9.1-15.8-25.5-17.1-25.5-17.1c-16.2-0.2-1.1,10.2-1.1,10.2
+										   c10.8,5,18.4,24.2,18.4,24.2c9.7,29.7,56.1,19.7,56.1,19.7c0,9,0.1,21.7,0.1,30.6c0,4.8,0.1,8.6,0.1,10c0,4.3-3,9.5-11.5,8
+										   c-66-22.1-112.2-84.9-112.2-158.3C40.7,70.7,110.9,1,202.7,1s166.2,69.7,166.2,161.5c0.1,73.4-44.7,136.3-110.7,158.3
+										   C249.8,322.3,246.7,317.1,246.7,312.8z" />
+												</svg></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Nav item 2 Mega menu -->
+                        <li class="nav-item dropdown dropdown-fullwidth">
+                            <a class="nav-link dropdown-toggle" id="megaMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								我的朋友们</a>
+                            <div class="dropdown-menu" aria-labelledby="megaMenu">
+                                <div class="container">
+                                    <div class="row g-4 p-3 flex-fill">
+
+                                        <!-- Card item END -->
+                                        <!-- Card item START -->
+
+                                        <!-- Card item END -->
+                                        <!-- Card item START -->
+                                        <div class="col-sm-6 col-lg-3">
+                                            <div class="card bg-transparent">
+                                                <!-- Card img -->
+                                                <img class="card-img rounded" src="assets/images/0772F427-32E6-47F2-9706-C145067F8DA4_1_105_c.jpeg" alt="Card image">
+                                                <div class="card-body px-0 pt-3">
+                                                    <h6 class="card-title mb-0">
+                                                        <a class="btn-link text-reset fw-bold">秋秋猫猫.</a>
+                                                    </h6>
+                                                    <!-- Card info -->
+                                                    <ul class="nav nav-divider align-items-center text-uppercase small mt-2">
+                                                        <li class="nav-item">
+                                                            <a class="text-reset btn-link">Snow</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="badge bg-primary mb-2" style="color: white;">2024 年秋</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <div class="card bg-transparent">
+                                                <!-- Card img -->
+                                                <img class="card-img rounded" src="assets/images/987CABA3-BB03-42C2-BFFA-FA49B8A33611_1_105_c.jpeg" alt="Card image">
+                                                <div class="card-body px-0 pt-3">
+                                                    <h6 class="card-title mb-0">
+                                                        <a class="btn-link text-reset fw-bold">小呜呜猫猫.</a>
+                                                    </h6>
+                                                    <!-- Card info -->
+                                                    <ul class="nav nav-divider align-items-center text-uppercase small mt-2">
+                                                        <li class="nav-item">
+                                                            <a class="text-reset btn-link">Snow</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="badge bg-primary mb-2" style="color: white;">2025 年夏
+																</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <div class="card bg-transparent">
+                                                <!-- Card img -->
+                                                <img class="card-img rounded" src="assets/images/E54BF33A-2EB7-449C-A4B5-03A3EDFD34FE_1_105_c.jpeg" alt="Card image">
+                                                <div class="card-body px-0 pt-3">
+                                                    <h6 class="card-title mb-0">
+                                                        <a class="btn-link text-reset fw-bold">秋秋和小呜呜猫猫.</a>
+                                                    </h6>
+                                                    <!-- Card info -->
+                                                    <ul class="nav nav-divider align-items-center text-uppercase small mt-2">
+                                                        <li class="nav-item">
+                                                            <a class="text-reset btn-link">Snow</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="badge bg-primary mb-2" style="color: white;">2025 年秋</a>
+
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <div class="card bg-transparent">
+                                                <!-- Card img -->
+                                                <img class="card-img rounded" src="assets/images/3031721199684_.pic_hd.optim.jpg" alt="Card image">
+                                                <div class="card-body px-0 pt-3">
+                                                    <h6 class="card-title mb-0">
+                                                        <a class="btn-link text-reset fw-bold">小咪猫猫.</a>
+                                                    </h6>
+                                                    <!-- Card info -->
+                                                    <ul class="nav nav-divider align-items-center text-uppercase small mt-2">
+                                                        <li class="nav-item">
+                                                            <a class="text-reset btn-link">Snow</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="badge bg-primary mb-2" style="color: white;">2023 年秋</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- Row END -->
+
+                        </li>
+                    </ul>
+                    </div>
+                    </div>
+        </nav>
+        <!-- Logo Nav END -->
+    </header>
+
+    <main>
+
+        <section class="pt-0">
+            <div class="container">
+                <div class="content js-list grid">
+                    <div>
+
+                        <h1>Ziwei Xue
+                        </h1>
+                        <p>生物信息学博士 | 联合博士后研究员，任职于 <b>欧洲分子生物学实验室（EMBL）</b> 与 <b>德国癌症研究中心（DKFZ）</b> （2026 年 10 月起）<a href="mailto:ziwei.21@intl.zju.edu.cn" class="link_in_text"> 📧
+								ziwei.21@intl.zju.edu.cn</a></p>
+                        <p>个人简历： <a href="./assets/cv/CV_ZiweiXue_202610.pdf">点击查看</a> </p>
+                        <h2>
+                            <b>关于我</b>
+                        </h2>
+
+                        <div>
+                            <p>我在 <a href="https://zje.zju.edu.cn/zje/">浙江大学爱丁堡大学联合学院（ZJU-UoE）</a>获得生物信息学博士学位，将于 2026 年 10 月起在 EMBL 和 DKFZ 开展联合博士后研究。我的研究兴趣是多组学数据分析，重点开发机器学习和深度学习方法，以深入理解癌症及自身免疫性疾病中免疫细胞的表型多样性。我致力于整合不断增长、日益多样化的高通量测序数据，涵盖基因组学、转录组学、蛋白质组学和免疫组学等模态，以及群体、单细胞和空间等尺度，从而全面解析疾病背景下免疫系统的动态变化。</p>
+                        </div>
+
+                        <div class="dropdown-divider" style="width:50%;margin:auto;margin-top: 2rem; margin-bottom:2rem"></div>
+                        <div>
+                            <div class="section-heading">
+                                <h2> 教育与任职经历</h2>
+                            </div>
+                            <div>
+                                <b style="color: black">2026 年 10 月</b>
+                                <p> <b>博士后研究员</b>, <i>EMBL</i> <img src="./assets/logos/embl-logo.png" alt="EMBL logo" class="institution-logo"> 与 <i>DKFZ</i> <img src="./assets/logos/Deutsches_Krebsforschungszentrum_Logo.3.png" alt="DKFZ logo" class="institution-logo">，德国海德堡</p>
+                            </div>
+                            <div>
+                                <b style="color: black">2021</b> - <b style="color: black">2026</b>
+                                <p> <b>生物信息学博士</b>，浙江大学爱丁堡大学联合学院 <img src="./assets/logos/zju-logo.png" alt="Zhejiang University logo" class="institution-logo"><img src="./assets/logos/uoe-crest.png" alt="University of Edinburgh crest" class="institution-logo">,
+                                    <i>浙江大学</i>，中国海宁</p>
+                            </div>
+                            <div>
+                                <b style="color: black">2017</b> - <b style="color: black">2021</b>
+                                <p> <b>学士</b> ，生物医学专业，浙江大学爱丁堡大学联合学院 <img src="./assets/logos/zju-logo.png" alt="Zhejiang University logo" class="institution-logo"><img src="./assets/logos/uoe-crest.png" alt="University of Edinburgh crest" class="institution-logo">,
+                                    <i>浙江大学</i>，中国海宁</p>
+                            </div>
+                            <div>
+                                <b style="color: black">2014</b> - <b style="color: black">2017</b>
+                                <p> 深圳中学 </p>
+                            </div>
+                        </div>
+
+
+                        <div class="dropdown-divider" style="width:50%;margin:auto;margin-top: 2rem; margin-bottom:2rem"></div>
+                        <div>
+                            <div>
+                                <div class="section-heading">
+                                    <h2> 学术论文 </h2>
+                                </div>
+
+                                <div>
+                                    <ol>
+                                        <li>
+                                            <div class="card">
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <img src="./assets/images/pub/patterns26.png" alt="Patterns journal logo">
+                                                    </div>
+                                                    <div class="col">
+                                                        <a href="https://doi.org/10.1016/j.patter.2025.101471">
+                                                            <h4>DestinyNet: A deep learning framework integrating lineage tracing and single-cell sequencing information for fate clustering, flow, and prediction</h4>
+                                                        </a>
+                                                        <p>Liu, Z.*, Jiang, S.*, Hu, T.*, <b style='color: black'>Xue, Z.</b>*, Chen, Y., Ruan, D., Xia, H., Feng, Y., Hao, J., Li, W., Zhou, T., Fang, B., Wu, J., Liu, W.# (<b style="color: #1F5699;">2025</b>)
+                                                            <b style="color: #1F5699;"><i>Patterns</i></b>,
+                                                            <b>7</b>, 101471.
+
+                                                            <br>
+                                                            <a href="https://github.com/WanluLiuLab/DestinyNet"><img src="https://img.shields.io/github/stars/WanluLiuLab/DestinyNet?style=social&amp;label=Code+Stars" style="max-width: 100%;"></a>
+                                                        </p>
+                                                        <small>DestinyNet 是面向谱系追踪单细胞 RNA 测序数据的多任务深度学习框架，可在多种数据集中实现细胞命运聚类、流向分析和预测。</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="card">
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <img src="./assets/images/pub/cell_discovery.png" alt="Cell Discovery journal logo">
+                                                    </div>
+                                                    <div class="col">
+                                                        <a href="https://doi.org/10.1038/s41421-025-00836-7">
+                                                            <h4>A pan-disease and population-level single-cell TCRαβ repertoire reference</h4>
+                                                        </a>
+                                                        <p><b style='color: black'>Xue, Z.</b>, Wu, L., Gao, B., Tian, R., Chen, Y., Qi, Y., Dong, T., Bai, Y., Zhao, Y., He, B., Wang, L., Liu, Z., Yao, J., Lu, L.#, Liu, W.# (<b style="color: #1F5699;">2025</b>)
+                                                            <b style="color: #1F5699;"><i>Cell Discovery</i></b>, <b>11</b>, 82.
+                                                            <br>
+                                                            <a href="https://github.com/WanluLiuLab/TCR-DeepInsight"><img src="https://img.shields.io/github/stars/WanluLiuLab/TCR-DeepInsight?style=social&amp;label=Code+Stars" style="max-width: 100%;"></a>
+                                                        </p>
+                                                        <small>跨疾病和人群开展全面的单细胞 T 细胞受体（TCR）库分析，深入理解免疫细胞的多样性与功能。</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="card">
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <img src="./assets/images/pub/ncomm25.png" alt="Nature Communications journal logo">
+                                                    </div>
+                                                    <div class="col">
+                                                        <a href="https://doi.org/10.1038/s41467-025-63915-z">
+                                                            <h4>Integrating cross-sample and cross-modal data for spatial transcriptomics and metabolomics with SpatialMETA</h4>
+                                                        </a>
+                                                        <p>Tian, R., <b style='color: black'>Xue, Z.</b>, Chen, Y., Qi, Y., Zhang, J., Yuan, J., Ruan, D., Lin, J., Liu, J., Wang, D., Ye, Y., & Liu, W.# (<b style="color: #1F5699;">2025</b>) <b style="color: #1F5699;"><i>Nature Communications</i></b>,
+                                                            <b>16</b>, 8855.
+                                                            <br>
+                                                            <a href="https://github.com/WanluLiuLab/SpatialMETA"><img src="https://img.shields.io/github/stars/WanluLiuLab/SpatialMETA?style=social&amp;label=Code+Stars" style="max-width: 100%;"></a>
+                                                        </p>
+                                                        <small>整合多个样本及模态的空间转录组与代谢组数据，为多组学分析提供系统框架。</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="card">
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <img src="./assets/images/pub/natrevca25.png" alt="Nature Reviews Cancer journal logo">
+                                                    </div>
+                                                    <div class="col">
+                                                        <a href="https://doi.org/10.1038/s41568-025-00811-0">
+                                                            <h4>scAtlasVAE: a deep learning framework for generating a human CD8<sup>+</sup> T cell atlas</h4>
+                                                        </a>
+                                                        <p><b style='color: black'>Xue, Z.</b> (<b style="color: #1F5699;">2025</b>) <b style="color: #1F5699;"><i>Nature Reviews Cancer</i></b>, <b>25</b>, 319.
+                                                            <br>
+                                                            <a href="https://github.com/WanluLiuLab/scAtlasVAE"><img src="https://img.shields.io/github/stars/WanluLiuLab/scAtlasVAE?style=social&amp;label=Code+Stars" style="max-width: 100%;"></a>
+                                                        </p>
+                                                        <small>利用深度学习从单细胞数据构建全面的人类 CD8+ T 细胞图谱，系统刻画 T 细胞多样性与功能。</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="card">
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <img src="./assets/images/pub/gpb25.png" alt="GPB journal logo">
+                                                    </div>
+                                                    <div class="col">
+                                                        <a href="https://doi.org/10.1093/gpbjnl/qzae086">
+                                                            <h4>Evaluation of T Cell Receptor Construction Methods from scRNA-Seq Data</h4>
+                                                        </a>
+                                                        <p>Tian, R.*, Yu, Z.*, <b style='color: black'>Xue, Z.</b>, Wu, J., Wu, L., Cai, S., Gao, B., He, B., Zhao, Y., Yao, J., Lu, L., Liu, W.# (<b style="color: #1F5699;">2025</b>) <b style="color: #1F5699;"><i>Genomics, Proteomics & Bioinformatics</i></b>,
+                                                            <b>22</b>, qzae086.
+                                                            <br>
+                                                        </p>
+                                                        <small>全面评估从单细胞 RNA 测序数据重建 T 细胞受体序列的不同计算方法。</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="card">
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <img src="./assets/images/pub/nmeth25.png" alt="Nature Methods journal logo">
+                                                    </div>
+                                                    <div class="col">
+                                                        <a href="https://doi.org/10.1038/s41592-024-02530-0">
+                                                            <h4>Integrative mapping of human CD8<sup>+</sup> T cells in inflammation and cancer</h4>
+                                                        </a>
+                                                        <p><b style='color: black'>Xue, Z.</b>*, Wu, L.*, Tian, R., Gao, B., Zhao, Y., Bing, H., Zhao, B., Li, Y., Zhu, K., Wang, L., Yao, J.#, Liu, W.# & Lu, L.# (<b style="color: #1F5699;">2025</b>) <b style="color: #1F5699;"><i>Nature Methods</i></b>,
+                                                            <b>22</b>, 435-445.
+                                                            <br>
+                                                            <a href="https://github.com/WanluLiuLab/scAtlasVAE"><img src="https://img.shields.io/github/stars/WanluLiuLab/scAtlasVAE?style=social&amp;label=Code+Stars" style="max-width: 100%;"></a>
+                                                        </p>
+                                                        <small>利用多模态单细胞数据，整合解析炎症和癌症背景下的人类 CD8+ T 细胞状态。</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="card">
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <img src="./assets/images/pub/mobile_dna.png" alt="Mobile DNA journal logo">
+                                                    </div>
+                                                    <div class="col">
+                                                        <a href="https://doi.org/10.1186/s13100-024-00313-0">
+                                                            <h4>CRISPR-TE: a web-based tool to generate single guide RNAs targeting transposable elements</h4>
+                                                        </a>
+                                                        <p>Guo, Y.*, <b style='color: black'>Xue, Z.</b>, Gong, M., Jin, S., Wu, X. & Liu, W.# (<b style="color: #1F5699;">2024</b>) <b style="color: #1F5699;"><i>Mobile DNA</i></b>, <b>15</b>, 3.
+                                                            <br>
+                                                            <a href="https://www.crisprte.cn/"><img src="https://img.shields.io/badge/Website-CRISPRTE-blue" style="max-width: 100%;"></a>
+                                                        </p>
+                                                        <small>用于设计靶向转座元件的 CRISPR 向导 RNA 的在线平台，助力功能基因组学研究。</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="card">
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <img src="./assets/images/pub/ncomm24.png" alt="Nature Communications journal logo">
+                                                    </div>
+                                                    <div class="col">
+                                                        <a href="https://doi.org/10.1038/s41467-024-48117-3">
+                                                            <h4>Comprehensive assessment of mRNA isoform detection methods for long-read sequencing data</h4>
+                                                        </a>
+                                                        <p>Su, Y.*, Yu, Z., Jin, S., Ai, Z., Yuan, R., Chen, X., <b style='color: black'>Xue, Z.</b>, Guo, Y., Chen, D., Liang, H., Liu, Z., Liu, W. (<b style="color: #1F5699;">2024</b>) <b style="color: #1F5699;"><i>Nature Communications</i></b>,
+                                                            <b>15</b>, 3972.
+                                                            <br>
+                                                        </p>
+                                                        <small>系统评估利用长读长测序数据检测 mRNA 异构体的计算方法。</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="card">
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <img src="./assets/images/pub/iscience.png" alt="iScience journal logo">
+                                                    </div>
+                                                    <div class="col">
+                                                        <a href="https://www.msdb.org.cn/">
+                                                            <h4>MSdb: An integrated expression atlas of human musculoskeletal system
+                                                            </h4>
+                                                        </a>
+                                                        <p>Tian, R.*, <b style='color: black'>Xue, Z.</b>*, Ruan, D., Chen, P., Xu, Y., Dai, C., Shen, W., Ouyang, H., Liu, W., and Lin, J. (<b style="color: #1F5699;">2023</b>) <b style="color: #1F5699;"><i>iScience</i></b>,
+                                                            <b>26</b>, 106933.
+                                                            <br>
+                                                            <a href="https://www.msdb.org.cn/"><img src="https://img.shields.io/badge/Website-MSDB-pink" style="max-width: 100%;"></a>
+                                                        </p>
+                                                        <small>整合多组织、多细胞类型转录组数据，构建人类肌肉骨骼系统的综合表达图谱。</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="card">
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <img src="./assets/images/pub/ncomm23.png" alt="Nature Communications journal logo">
+                                                    </div>
+                                                    <div class="col">
+                                                        <a href="https://doi.org/10.1038/s41467-023-39344-1">
+                                                            <h4>Selective binding of retrotransposons by ZFP352 facilitates the timely dissolution of totipotency network</h4>
+                                                        </a>
+                                                        <p>Li, Z., Xu, H., Li, J., Xu, X., Wang, J., Wu, D., Zhang, J., Liu, J., <b style='color: black'>Xue, Z.</b>, Zhan, G., Tan, B.C.P., Chen, D., Chan, Y-S., Ng, H.H., Liu, W., Hsu, C-H., Zhang, D., Shen,
+                                                            Y. & Liang, H. (<b style="color: #1F5699;">2023</b>) <b style="color: #1F5699;"><i>Nature Communications</i></b>, <b>14</b>, 3646.
+                                                            <br>
+                                                        </p>
+                                                        <small>揭示 ZFP352 在细胞从全能性向分化过渡过程中调控逆转录转座元件的作用。</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="card">
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <img src="./assets/images/pub/nar.png" alt="NAR journal logo">
+                                                    </div>
+                                                    <div class="col">
+                                                        <a href="https://huardb.net/v2/">
+                                                            <h4>huARdb: human Antigen Receptor database for interactive clonotype-transcriptome analysis at the single-cell level</h4>
+                                                        </a>
+                                                        <p>Wu, L.*, <b style='color: black'>Xue, Z.</b>*, Jin, S., Zhang, J., Bai, Y., Jin, X., Wang, C., Wang, L., Wang, J.Q., Lu, L. & Liu, W.# (<b style="color: #1F5699;">2022</b>) <b style="color: #1F5699;"><i>Nucleic Acids Research</i></b>,
+                                                            <b>50</b>(D1), D1244-D1254.
+                                                            <br>
+                                                            <a href="https://huardb.net/v2/"><img src="https://img.shields.io/badge/Website-huARdb-orange" style="max-width: 100%;"></a>
+                                                        </p>
+                                                        <small>整合 T/B 细胞受体序列与转录组数据，支持免疫受体克隆型和基因表达的联合分析。</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="card">
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <img src="./assets/images/pub/ncomm22.png" alt="Nature Communications journal logo">
+                                                    </div>
+                                                    <div class="col">
+                                                        <a href="https://doi.org/10.1038/s41467-022-28105-1">
+                                                            <h4>Human reproduction is regulated by retrotransposons derived from ancient Hominidae-specific viral infections</h4>
+                                                        </a>
+                                                        <p>Xiang, X.*, Tao, Y., DiRusso, J., Hsu, F.-M., Zhang, J., <b style='color: black'>Xue, Z.</b>, Pontis, J., Trono, D., Liu, W., and Clark, A.T. (<b style="color: #1F5699;">2022</b>) <b style="color: #1F5699;"><i>Nature Communications</i></b>,
+                                                            <b>13</b>, 463.
+                                                            <br>
+                                                        </p>
+                                                        <small>揭示古老逆转录转座元件在人类胚胎发育与生殖中的调控作用。</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="card">
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <img src="./assets/images/pub/bbrc.png" alt="BBRC journal logo">
+                                                    </div>
+                                                    <div class="col">
+                                                        <a href="https://linkinghub.elsevier.com/retrieve/pii/S0006-291X(21)01313-9">
+                                                            <h4>Identification of SRSF3 target mRNAs using inducible TRIBE</h4>
+                                                        </a>
+                                                        <p>Jin, S.*, <b style='color: black'>Xue, Z.</b>*, Zhang, J., Wang, Z., Zhang, J., Chen, D.#, Liu, W.#, Lin, J.# (<b style="color: #1F5699;">2021</b>) <b style="color: #1F5699;"><i>Biochemical and Biophysical Research Communications</i></b>,
+                                                            <b>578</b>, 21-27.
+                                                            <br>
+                                                        </p>
+                                                        <small>应用 TRIBE 技术，系统鉴定剪接调控因子 SRSF3 的 mRNA 靶标。</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="card">
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <img src="./assets/images/pub/bioinformatics.png" alt="Bioinformatics journal logo">
+                                                    </div>
+                                                    <div class="col">
+                                                        <a href="https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btab075/6126802">
+                                                            <h4>RAD: a web application to identify region associated differentially expressed genes</h4>
+                                                        </a>
+                                                        <p>Guo, Y.*, <b style='color: black'>Xue, Z.</b>, Yuan, R., Li, J., Pastor, W. & Liu, W.# (<b style="color: #1F5699;">2021</b>) <b style="color: #1F5699;"><i>Bioinformatics</i></b>, <b>37</b>, 2741-2743.
+                                                            <br>
+                                                            <a href="https://labw.org/rad"><img src="https://img.shields.io/badge/Website-RAD-purple" style="max-width: 100%;"></a>
+                                                        </p>
+                                                        <small>通过基因组区域分析，识别具有空间和时间相关性的差异表达基因的在线工具。</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ol>
+                                    <small>*：第一作者或共同第一作者；#：通讯作者。 </small>
+                                    <p> </p>
+                                    <div class="row" style="text-align: center;">
+                                        <div class="col-1">
+                                            <a href="https://github.com/Beiusxzw" target="_blank"><svg version="1.1" id="Layer_1"
+										xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+										x="0px" y="0px" viewBox="0 0 407.3 328.5"
+										style="enable-background:new 0 0 407.3 328.5; height: 24pt; "
+										xml:space="preserve">
+										<path d="M246.7,312.8c0-1.8,0-6,0.1-11.6c0.1-11.4,0.1-28.8,0.1-43.7c0-15.6-5.2-25.5-11.3-30.7c37-4.1,76-9.2,76-73.1
+										   c0-18.2-6.5-27.3-17.1-39c1.7-4.3,7.4-22-1.7-45c-13.9-4.3-45.7,17.9-45.7,17.9c-13.2-3.7-27.5-5.6-41.6-5.6s-28.4,1.9-41.6,5.6
+										   c0,0-31.8-22.2-45.7-17.9c-9.1,22.9-3.5,40.6-1.7,45c-10.6,11.7-15.6,20.8-15.6,39c0,63.6,37.3,69,74.3,73.1
+										   c-4.8,4.3-9.1,11.7-10.6,22.3c-9.5,4.3-33.8,11.7-48.3-13.9c-9.1-15.8-25.5-17.1-25.5-17.1c-16.2-0.2-1.1,10.2-1.1,10.2
+										   c10.8,5,18.4,24.2,18.4,24.2c9.7,29.7,56.1,19.7,56.1,19.7c0,9,0.1,21.7,0.1,30.6c0,4.8,0.1,8.6,0.1,10c0,4.3-3,9.5-11.5,8
+										   c-66-22.1-112.2-84.9-112.2-158.3C40.7,70.7,110.9,1,202.7,1s166.2,69.7,166.2,161.5c0.1,73.4-44.7,136.3-110.7,158.3
+										   C249.8,322.3,246.7,317.1,246.7,312.8z" />
+									</svg>
+								</a>
+                                        </div>
+                                        <div class="col-1">
+                                            <a href="https://orcid.org/0000-0002-3491-2433" target="_blank">
+                                                <img src="https://orcid.org/assets/vectors/orcid.logo.icon.svg" alt="orcid logo" style="height: 24pt;">
+                                            </a>
+                                        </div>
+                                        <div class="col-3">
+                                            <a href="https://www.researchgate.net/profile/Ziwei-Xue-2/research" target="_blank">
+                                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 124 17" style="enable-background:new 0 0 124 17; height: 24pt" xml:space="preserve">
+										<style type="text/css">
+											.st0 {
+												fill-rule: evenodd;
+												clip-rule: evenodd;
+											}
+										</style>
+										<path class="st0" d="M34.6,8.9c0.2-1.3,1-2.6,2.6-2.6c1.4,0,2,1.2,2,2.4c0,0.2,0,0.2-0.2,0.2C39,8.9,34.6,8.9,34.6,8.9z M37.3,4.8
+									c-2.9,0-5,2.6-5,6.1c0,3.6,1.9,5.7,5.1,5.7c1.7,0,3.1-0.8,3.5-1.5l0-0.1l-0.1-1l-0.3,0.2c-0.8,0.4-1.7,0.6-2.7,0.6
+									c-2.5,0-3.3-2.1-3.3-4.1c0-0.1,0-0.3,0-0.4h7l0-0.2c0-0.3,0-0.5,0-0.8C41.5,7.1,40.2,4.8,37.3,4.8L37.3,4.8z M110.4,2.4h-1.1
+									l-0.1,0.2c-0.3,1.2-0.8,2-2.1,2.8L107,5.5v1.1h1.3v7.2c0,2,0.8,2.9,2.6,2.9c1.1,0,2.2-0.5,2.6-1.1l0-0.1l-0.2-0.8l-0.3,0.1
+									c-0.5,0.2-1,0.2-1.5,0.2c-0.8,0-1.2-0.3-1.2-1.6V6.6h3.1V5h-3.1L110.4,2.4L110.4,2.4z M48,11.4C48,12,48,13.3,48,14
+									c-0.4,0.4-1.1,0.8-2,0.8c-0.9,0-1.5-0.6-1.5-1.5c0-1.3,1-1.9,3-1.9h0C47.6,11.4,47.8,11.4,48,11.4 M50.1,13.9c0-1,0-2,0-2.9
+									c0-0.9,0-1.7,0-2.5c0-2.4-1.4-3.8-3.9-3.8c-1.3,0-2.6,0.7-3.2,1.4L43,6.2l0.2,1.1l0.3-0.2c0.7-0.4,1.4-0.6,2.3-0.6
+									c1.5,0,2.2,0.7,2.2,2.4v1c-0.3,0-0.7,0-0.9,0c-2.9,0-4.8,1.4-4.8,3.7c0,1.8,1.3,3,3.1,3c1.2,0,2.2-0.6,2.7-1.2
+									c0.2,0.7,0.9,1.2,1.8,1.2c0.7,0,1.4-0.2,1.8-0.4l0.1-0.1v-1h-0.2C50.3,15.1,50.1,14.8,50.1,13.9 M59,4.8c-0.7,0-1.8,0.5-2.5,1.1V4.5
+									l-0.4,0.2c-1.1,0.5-1.8,0.7-3,1l-0.2,0.1v0.9l0.2,0c1.2,0.2,1.2,0.3,1.2,1.4v5.4c0,1.4-0.2,1.5-0.5,1.5L53,15.3v1.1l0.3,0
+									c0.2,0,0.4,0,0.6,0c0.5,0,1.1-0.1,1.6-0.1c0.6,0,1.4,0,2,0.1l0.7,0v-1.1l-1.2-0.1c-0.3,0-0.5-0.1-0.5-1.5V7.4c0.6-0.4,1.3-0.7,2-0.7
+									c0.4,0,0.9,0.1,1.1,0.2L60,7.1L60.2,5L60,4.9C59.7,4.8,59.4,4.8,59,4.8 M68.8,14.2c-0.6,0.4-1.4,0.6-2.4,0.6c-2.2,0-3.6-1.6-3.6-4.2
+									c0-2.6,1.3-4.4,3.1-4.4c1.2,0,1.8,0.6,1.8,1.9l0,0.2h1.3V8.1c0-0.7,0-1.8,0.1-2.5l0-0.2l-0.2-0.1c-0.9-0.4-1.9-0.5-3-0.5
+									c-3,0-5.4,2.7-5.4,6.1c0,3.5,2,5.7,5.2,5.7c1.7,0,3-0.8,3.4-1.5l0-0.1l-0.2-1L68.8,14.2L68.8,14.2z M102.5,11.4
+									c0,0.6-0.1,1.9-0.1,2.6c-0.4,0.4-1.1,0.8-2,0.8c-0.9,0-1.5-0.6-1.5-1.5c0-1.3,1-1.9,3-1.9h0C102.1,11.4,102.3,11.4,102.5,11.4
+									M104.6,13.9c0-1,0-2,0-2.9c0-0.9,0-1.7,0-2.5c0-2.4-1.4-3.8-3.9-3.8c-1.3,0-2.6,0.7-3.2,1.4l-0.1,0.1l0.2,1.1L98,7.1
+									c0.7-0.4,1.4-0.6,2.3-0.6c1.5,0,2.2,0.7,2.2,2.4v1c-0.3,0-0.7,0-0.9,0c-2.9,0-4.8,1.4-4.8,3.7c0,1.8,1.3,3,3.1,3
+									c1.2,0,2.2-0.6,2.7-1.2c0.2,0.7,0.9,1.2,1.8,1.2c0.7,0,1.4-0.2,1.8-0.4l0.1-0.1v-1H106C104.8,15.1,104.6,14.8,104.6,13.9 M80.5,13.6
+									V8.8c0-1.7-0.4-4-3.5-4c-1,0-2.1,0.6-2.8,1.1V0l-0.4,0.2c-1,0.5-1.8,0.8-3,1.2l-0.2,0.1v0.9l0.2,0C72,2.6,72,2.7,72,3.8v9.8
+									c0,1.4-0.2,1.5-0.5,1.5l-0.9,0.1v1.1l0.6,0c0.5,0,1.2,0,1.8,0c0.7,0,1.4,0,1.9,0.1l0.6,0v-1.1l-0.9-0.1c-0.3-0.1-0.5-0.1-0.5-1.5
+									V7.3c0.4-0.2,1.3-0.8,2.3-0.8c1.5,0,2,0.7,2,2.5v4.5c0,1.4-0.2,1.5-0.5,1.5L77,15.3v1.1l0.6,0c0.5,0,1.2,0,1.8,0
+									c0.7,0,1.4,0,1.9,0.1l0.6,0v-1.1L81,15.1C80.7,15.1,80.5,15,80.5,13.6 M116.6,8.9c0.2-1.3,1-2.6,2.6-2.6c1.4,0,2,1.2,2,2.4
+									c0,0.2,0,0.2-0.2,0.2H116.6z M119.3,4.8c-2.9,0-5,2.6-5,6.1c0,3.6,1.9,5.7,5.1,5.7c1.7,0,3.1-0.8,3.5-1.5l0-0.1l-0.1-1l-0.3,0.2
+									c-0.8,0.4-1.7,0.6-2.7,0.6c-2.5,0-3.3-2.1-3.3-4.1c0-0.1,0-0.3,0-0.4h7l0-0.2c0-0.3,0-0.5,0-0.8C123.5,7.1,122.2,4.8,119.3,4.8
+									L119.3,4.8z M93.4,9.7c-0.8,0-1.6,0-2.4-0.1l-0.5,0v1.1l1,0.2c0.4,0.1,0.7,0.1,0.7,1.5v2.4c-0.7,0.4-1.7,0.4-2.3,0.4
+									c-2.7,0-4.5-2.4-4.5-6c0-3.6,1.8-6,4.5-6c1.7,0,2.8,0.9,2.9,2.7l0,0.2h1.3l0-0.3c-0.1-1.2-0.1-2.2-0.1-3.2l0-0.2l-0.2-0.1
+									c-0.8-0.3-2.1-0.7-3.9-0.7c-4,0-7,3.2-7,7.6c0,4.4,2.6,7.3,6.7,7.3c1.9,0,3.8-0.5,4.6-0.8l0.2-0.1v-3.4c0-1.3,0.2-1.4,0.6-1.5
+									l0.9-0.2V9.6l-0.6,0C94.8,9.7,94.2,9.7,93.4,9.7 M15,8.9c0.2-1.3,1-2.6,2.6-2.6c1.4,0,2,1.2,2,2.4c0,0.2,0,0.2-0.2,0.2
+									C19.4,8.9,15,8.9,15,8.9z M17.7,4.8c-2.9,0-5,2.6-5,6.1c0,3.6,1.9,5.7,5.1,5.7c1.7,0,3.1-0.8,3.5-1.5l0-0.1l-0.1-1l-0.3,0.2
+									c-0.8,0.4-1.7,0.6-2.7,0.6c-2.5,0-3.3-2.1-3.3-4.1c0-0.1,0-0.3,0-0.4h7l0-0.2c0-0.3,0-0.5,0-0.8C21.9,7.1,20.6,4.8,17.7,4.8
+									L17.7,4.8z M27.4,9.4c-1.3-0.5-2.1-0.9-2.1-1.8c0-1.3,1.2-1.5,1.9-1.5c1.3,0,1.9,0.6,2,1.9l0,0.2h1.3l0-0.3c-0.1-0.9-0.1-1.5,0-2.5
+									l0-0.2l-0.2-0.1c-0.7-0.3-1.9-0.6-3-0.6c-2.3,0-3.9,1.3-3.9,3.2c0,2.4,1.8,3,3.3,3.6c1.3,0.5,2.2,0.8,2.2,1.9c0,1.1-0.8,1.8-2.1,1.8
+									c-1.7,0-2.1-0.7-2.2-2.2l0-0.2h-1.3l0,0.3c0.1,1,0.1,1.9,0.1,2.9l0,0.2l0.2,0.1c1.1,0.4,2.1,0.5,3.3,0.5c2.2,0,4-1.5,4-3.5
+									C30.7,10.7,28.9,10,27.4,9.4 M8,6c0,1.7-1.1,2.7-2.8,2.7c-0.4,0-0.9,0-1.3,0V3.5c0.5,0,1,0,1.5,0C7.1,3.5,8,4.4,8,6 M10.5,14.2
+									C9.5,13,8.3,11.4,7.4,9.8c1.7-0.6,2.9-2.2,2.9-3.9C10.4,3.4,8.6,2,5.8,2C5.1,2,4.5,2,3.9,2C3.4,2,3,2,2.5,2C1.7,2,0.8,2,0.3,2L0,2
+									v1.1l1,0.2c0.4,0.1,0.7,0.1,0.7,1.5v8.7c0,1.4-0.3,1.4-0.7,1.5l-1,0.2v1.1l0.5,0c0.6,0,1.5-0.1,2.4-0.1c1,0,2.3,0,2.8,0.1l0.3,0
+									v-1.1l-1.3-0.2c-0.3-0.1-0.7-0.1-0.7-1.5v-3.4c0.4,0,0.8,0,1.3,0c1.3,2.4,2.6,4.2,3.2,5c0.7,0.9,1.8,1.4,3.1,1.4
+									c0.4,0,0.8-0.1,1.1-0.2l0.1-0.1v-1h-0.2C11.9,15.3,11.2,14.9,10.5,14.2" />
+									</svg>
+                                            </a>
+                                        </div>
+                                        <div class="col-1">
+                                            <a href="https://scholar.google.com/citations?user=d2x43EgAAAAJ" target="_blank">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="enable-background:new 0 0 124 17; height: 24pt"><path fill="#4285f4" d="M256 411.12L0 202.667 256 0z"/><path fill="#356ac3" d="M256 411.12l256-208.453L256 0z"/><circle fill="#a0c3ff" cx="256" cy="362.667" r="149.333"/><path fill="#76a7fa" d="M121.037 298.667c23.968-50.453 75.392-85.334 134.963-85.334s110.995 34.881 134.963 85.334H121.037z"/></svg></a>
+                                        </div>
+                                        <div class="col-1">
+                                            <a href="https://www.linkedin.com/in/ziwei-xue-5298b51b9/" target="_blank">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height: 24pt;">
+                                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.026-3.059-1.865-3.059-1.865 0-2.151 1.459-2.151 2.967v5.696h-3v-10h2.881v1.367h.041c.401-.761 1.381-1.562 2.841-1.562 3.039 0 3.6 2.001 3.6 4.601v5.594z"/>
+                                    </svg>
+                                            </a>
+
+                                        </div>
+
+                                    </div>
+                                    <br> 代码见 GitHub，完整论文列表见 Google Scholar。
+                                </div>
+                                <div class="dropdown-divider" style="width:50%;margin:auto;margin-top: 2rem; margin-bottom:2rem"></div>
+                                <div>
+                                    <div class="section-heading">
+                                        <h2> 学术报告与展示 </h2>
+                                        <p><b>第十四届全国生物信息学与系统生物学学术大会，中国南宁，2025 年 10 月 7–10 日</b>
+                                            <span style="float:right;font-size:0.9rem;color:#6c757d;">2025 年 10 月</span></p>
+                                        <p><small><b>受邀报告</b>：AI 驱动的单细胞免疫组学整合揭示 T 细胞表型可塑性与 TCR 多样性</small></p>
+
+                                        <p><b>美国免疫学年会（AAAI）</b>
+                                            <span style="float:right;font-size:0.9rem;color:#6c757d;">2025 年 5 月</span></p>
+                                        <p><small><b>墙报：</b> 泛癌单细胞与空间转录组的统一整合</small></p>
+
+                                        <p><b>人类细胞图谱亚洲会议</b>
+                                            <span style="float:right;font-size:0.9rem;color:#6c757d;">2024 年 12 月</span></p>
+                                        <p><small><b>墙报：</b> 人类 CD8<sup>+</sup> T 细胞在炎症与癌症中的整合图谱</small></p>
+                                        <p><small><b>墙报：</b> 跨疾病、群体水平的单细胞 TCRαβ 受体库参考图谱</small></p>
+                                    </div>
+                                </div>
+                                <div class="dropdown-divider" style="width:50%;margin:auto;margin-top: 2rem; margin-bottom:2rem"></div>
+                                <div>
+                                    <div class="section-heading">
+                                        <h2> 荣誉与奖励 </h2>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <b style="color: black">2025</b>
+                                            <p><b>浙江大学竺可桢奖学金</b></p>
+                                        </div>
+                                        <div>
+                                            <b style="color: black">2025</b>
+                                            <p><b>国家奖学金</b></p>
+                                        </div>
+                                        <div>
+                                            <b style="color: black">2025</b>
+                                            <p><b>浙江大学国际校区先锋学子</b></p>
+                                        </div>
+                                        <div>
+                                            <b style="color: black">2024</b>
+                                            <p><b>浙江大学博士生求是新星培养计划</b></p>
+                                        </div>
+                                        <div>
+                                            <b style="color: black">2022, 2023, 2024, 2025</b>
+                                            <p><b>浙江大学优秀研究生</b></p>
+                                        </div>
+                                        <div>
+                                            <b style="color: black">2022</b>
+                                            <p><b>浙江大学医学院学术墙报展</b></p>
+                                        </div>
+                                        <div>
+                                            <b style="color: black">2022</b>
+                                            <p><b>浙江大学国际校区第一届交叉创新大赛</b></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <br>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+            </div>
+            <section class="container my-5" aria-labelledby="blog-heading">
+                <div class="section-heading text-center mb-4">
+                    <h2 id="blog-heading">博客</h2>
+                </div>
+                <figure class="text-center mb-0">
+                    <img src="assets/images/IMG_9951.jpeg" alt="Path to the new journey; Der Weg zur neuen Reise." class="img-fluid rounded" style="max-height: 80vh; width: auto;">
+                    <figcaption class="mt-3">Path to the new journey; Der Weg zur neuen Reise.</figcaption>
+                </figure>
+            </section>
+            <!-- Footer START -->
+            <footer class="bg-dark text-white py-4 mt-5">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <p class="mb-0">&copy; 2026 Ziwei Xue。保留所有权利。</p>
+                        </div>
+                        <div class="col-md-6 text-md-end">
+                            <p class="mb-0">用心设计 <i class="bi bi-heart-fill text-danger"></i> 设计者：Ziwei Xue</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- Footer END -->
+        </section>
+    </main>
+    <!-- Back to top -->
+    <div class="back-top"><i class="bi bi-arrow-up-short"></i></div>
+
+    <!-- =======================
+JS libraries, plugins and custom scripts -->
+
+    <!-- Bootstrap JS -->
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Vendors -->
+    <script src="assets/vendor/tiny-slider/tiny-slider.js"></script>
+
+    <!-- Template Functions -->
+    <script src="assets/js/functions.js"></script>
+
+</body>
+
+</html>
